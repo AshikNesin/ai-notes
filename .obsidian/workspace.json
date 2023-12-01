@@ -11,8 +11,12 @@
             "id": "7f0b0a6b34a430de",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "journals/2023_12_01.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#bookmark",
+                "query": "tag:#project-idea",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "journals/2023_12_01.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "journals/2023_12_01.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "journals/2023_12_01.md"
+              }
             }
           }
         ]
@@ -138,8 +147,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b69ea5dfba929d93",
+  "active": "7f0b0a6b34a430de",
   "lastOpenFiles": [
+    "assets/2023-12-01_at_22.49.37@2x_1701451184509_0.png",
+    "assets/2023-12-01_at_22.44.10@2x_1701450858233_0.png",
+    "logseq/bak/journals/2023_12_01/2023-12-01T16_07_27.576Z.Desktop.md",
+    "logseq/bak/journals/2023_12_01/2023-12-01T16_06_55.521Z.Desktop.md",
+    "logseq/bak/journals/2023_12_01",
+    "logseq/bak/journals",
+    "logseq/bak",
     "assets/2023-12-01_at_20.13.53_1701441847682_0.png",
     "pages/resources.md",
     "pages/bookmark.md",
