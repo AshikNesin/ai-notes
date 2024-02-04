@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "78f4f348f9779e7b",
+        "id": "0f0171d380c34480",
         "type": "tabs",
         "children": [
           {
-            "id": "9515e6f13d0a995c",
+            "id": "f742107f69fda2d9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI Notes.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI Notes.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI Notes.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI Notes.md"
+                "file": "README.md"
               }
             }
           }
@@ -143,29 +143,45 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-omnivore:Omnivore": false,
+      "periodic-notes:Open today": false
     }
   },
-  "active": "9515e6f13d0a995c",
+  "active": "f742107f69fda2d9",
   "lastOpenFiles": [
-    "pages/contents.md",
-    "AI Notes.md",
+    "weekly-notes/2024-W06.md",
+    "weekly-notes/2024-week-5.md",
+    "__templates/Weekly Note Template.md",
     "journals/2024_02_04.md",
+    "pages/contents.md",
+    "Resources/Roadmap.md",
+    "Resources/Books & Courses.md",
+    "weekly-notes/Untitled.md",
+    "weekly-notes",
     "__templates/Daily Log Template.md",
+    "journals/2023_12_01.md",
+    "journals/2023_12_26.md",
+    "journals/2023_12_27.md",
+    "README.md",
+    "Resources/Thoughts.md",
+    "Resources/Read List.md",
+    "Resources/People.md",
+    "assets/Roadmap_How_to_Learn_AI_in_2024_1703437684279_0.pdf",
+    "assets/2312.05934-Fine-Tuning_or_Retrieval?_Comparing_Knowledge_Injection_in_LLMs_1703663878519_0.pdf",
+    "Untitled.canvas",
+    "Resources",
     "journals/2023_12_21.md",
     "__templates",
-    "journals/2023_12_01.md",
     "assets/2023-12-25_at_09.14.48@2x_1703475899693_0.png",
     "assets/2023-12-24_at_22.48.20@2x_1703438317582_0.png",
     "assets/2023-12-01_at_22.49.37@2x_1701451184509_0.png",
     "assets/2023-12-01_at_22.44.10@2x_1701450858233_0.png",
     "assets/2023-12-01_at_20.13.53_1701441847682_0.png",
     "journals/2023_12_24.md",
-    "assets/2312.05934-Fine-Tuning_or_Retrieval?_Comparing_Knowledge_Injection_in_LLMs_1703663878519_0.pdf",
     "pages/hls__2312.05934-Fine-Tuning_or_Retrieval_Comparing_Knowledge_Injection_in_LLMs_1703663878519_0.md",
     "pages/hls__Curious_Moon_1701754272864_0.md",
     "pages/hls__Roadmap_How_to_Learn_AI_in_2024_1703437684279_0.md",
-    "assets/Roadmap_How_to_Learn_AI_in_2024_1703437684279_0.pdf",
     "logseq/bak/journals/2023_12_01/2023-12-01T16_07_27.576Z.Desktop.md",
     "logseq/bak/journals/2023_12_01/2023-12-01T16_06_55.521Z.Desktop.md",
     "logseq/bak/journals/2023_12_01",

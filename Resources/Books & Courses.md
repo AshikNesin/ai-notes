@@ -1,0 +1,6 @@
+- https://course.fast.ai/
+-  [LangChain for LLM Application Development](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/)
+-  [https://www.deeplearning.ai](https://www.deeplearning.ai/)
+- [cohere LLM University](https://docs.cohere.com/docs/llmu)
+- https://fullstackdeeplearning.com/llm-bootcamp/spring-2023/
+- 
