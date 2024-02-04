@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "0e7dd50e8a886953",
+        "id": "78f4f348f9779e7b",
         "type": "tabs",
         "children": [
           {
-            "id": "e965ebc2fcd77c29",
+            "id": "9515e6f13d0a995c",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "assets/2023-12-25_at_09.14.48@2x_1703475899693_0.png"
+                "file": "AI Notes.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "assets/2023-12-25_at_09.14.48@2x_1703475899693_0.png",
+                "file": "AI Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "assets/2023-12-25_at_09.14.48@2x_1703475899693_0.png",
+                "file": "AI Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "assets/2023-12-25_at_09.14.48@2x_1703475899693_0.png"
+                "file": "AI Notes.md"
               }
             }
           }
@@ -144,21 +146,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e965ebc2fcd77c29",
+  "active": "9515e6f13d0a995c",
   "lastOpenFiles": [
+    "pages/contents.md",
+    "AI Notes.md",
+    "journals/2024_02_04.md",
+    "__templates/Daily Log Template.md",
+    "journals/2023_12_21.md",
+    "__templates",
+    "journals/2023_12_01.md",
+    "assets/2023-12-25_at_09.14.48@2x_1703475899693_0.png",
     "assets/2023-12-24_at_22.48.20@2x_1703438317582_0.png",
     "assets/2023-12-01_at_22.49.37@2x_1701451184509_0.png",
     "assets/2023-12-01_at_22.44.10@2x_1701450858233_0.png",
     "assets/2023-12-01_at_20.13.53_1701441847682_0.png",
     "journals/2023_12_24.md",
-    "journals/2023_12_21.md",
-    "journals/2023_12_01.md",
     "assets/2312.05934-Fine-Tuning_or_Retrieval?_Comparing_Knowledge_Injection_in_LLMs_1703663878519_0.pdf",
     "pages/hls__2312.05934-Fine-Tuning_or_Retrieval_Comparing_Knowledge_Injection_in_LLMs_1703663878519_0.md",
     "pages/hls__Curious_Moon_1701754272864_0.md",
     "pages/hls__Roadmap_How_to_Learn_AI_in_2024_1703437684279_0.md",
     "assets/Roadmap_How_to_Learn_AI_in_2024_1703437684279_0.pdf",
-    "pages/contents.md",
     "logseq/bak/journals/2023_12_01/2023-12-01T16_07_27.576Z.Desktop.md",
     "logseq/bak/journals/2023_12_01/2023-12-01T16_06_55.521Z.Desktop.md",
     "logseq/bak/journals/2023_12_01",
