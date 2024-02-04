@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d3601573bac9f4be",
+        "id": "0e7dd50e8a886953",
         "type": "tabs",
         "children": [
           {
-            "id": "7f0b0a6b34a430de",
+            "id": "e965ebc2fcd77c29",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "journals/2023_12_01.md",
+                "file": "journals/2023_12_24.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "journals/2023_12_01.md",
+                "file": "journals/2023_12_24.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "journals/2023_12_01.md",
+                "file": "journals/2023_12_24.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "journals/2023_12_01.md"
+                "file": "journals/2023_12_24.md"
               }
             }
           }
@@ -147,8 +146,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7f0b0a6b34a430de",
+  "active": "e965ebc2fcd77c29",
   "lastOpenFiles": [
+    "journals/2023_12_21.md",
+    "journals/2023_12_01.md",
+    "assets/2312.05934-Fine-Tuning_or_Retrieval?_Comparing_Knowledge_Injection_in_LLMs_1703663878519_0.pdf",
+    "pages/hls__2312.05934-Fine-Tuning_or_Retrieval_Comparing_Knowledge_Injection_in_LLMs_1703663878519_0.md",
+    "pages/hls__Curious_Moon_1701754272864_0.md",
+    "pages/hls__Roadmap_How_to_Learn_AI_in_2024_1703437684279_0.md",
+    "assets/Roadmap_How_to_Learn_AI_in_2024_1703437684279_0.pdf",
+    "pages/contents.md",
     "assets/2023-12-01_at_22.49.37@2x_1701451184509_0.png",
     "assets/2023-12-01_at_22.44.10@2x_1701450858233_0.png",
     "logseq/bak/journals/2023_12_01/2023-12-01T16_07_27.576Z.Desktop.md",
@@ -159,8 +166,6 @@
     "assets/2023-12-01_at_20.13.53_1701441847682_0.png",
     "pages/resources.md",
     "pages/bookmark.md",
-    "pages/contents.md",
-    "journals/2023_12_01.md",
     "resources/bookmarks.md",
     "assets/2023-12-01_at_15.35.10@2x_1701439884323_0.png",
     "assets",
