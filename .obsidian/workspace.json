@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9ccefd245abf9e9d",
+        "id": "620ce0ca7d1d3dff",
         "type": "tabs",
         "children": [
           {
-            "id": "36a1748bdaf488f3",
+            "id": "b0485a855074f88b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archives/__templates/Blog Post Template.md",
+                "file": "NesinIO-AI/content/blog/2024-09/what-works-in-ai-ux-swyx.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Blog Post Template"
+              "title": "what-works-in-ai-ux-swyx"
             }
           }
         ]
@@ -180,12 +180,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "36a1748bdaf488f3",
+  "active": "b0485a855074f88b",
   "lastOpenFiles": [
     "NesinIO-AI/content/blog/2024-12/hello-word-test-template.md",
-    "NesinIO-AI/content/_index.md",
-    "Archives/__templates/Blog Post Template.md",
     "NesinIO-AI/content/blog/2024-09/what-works-in-ai-ux-swyx.md",
+    "Archives/__templates/Blog Post Template.md",
+    "Archives/__templates/Daily Log Template.md",
+    "NesinIO-AI/content/blog/2024-12/pinecone-query-metadata-filter.md",
+    "NesinIO-AI/content/_index.md",
     "NesinIO-AI/Scratchpad.md",
     "NesinIO-AI/content/bookmarks.md",
     "Resources/assets/Pasted image 20241222205025.png",
@@ -197,7 +199,6 @@
     "Resources/assets/Pasted image 20241222204837.png",
     "NesinIO-AI/content/blog/2024-09/pinecone-query-metadata-filter.md",
     "NesinIO-AI/content/blog/2024-09",
-    "NesinIO-AI/content/blog/2024-12/pinecone-query-metadata-filter.md",
     "NesinIO-AI/content/blog/2024-12/langchain-convert-messages.md",
     "NesinIO-AI/content/blog/2024-12",
     "NesinIO-AI/content/blog/2024-01/langchain-convert-messages.md",
@@ -223,7 +224,6 @@
     "Resources/Tools.md",
     "Resources/Books & Courses.md",
     "Areas/weekly-notes/2024-W51.md",
-    "Areas/weekly-notes/2024-W39.md",
     "Resources/assets/Roadmap_How_to_Learn_AI_in_2024_1703437684279_0.pdf",
     "assets",
     "Archives",

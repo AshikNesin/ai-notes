@@ -5,6 +5,3 @@ description:
 tags:
 url: "blog/<% tp.file.title %>"
 ---
-
-
-<!--more-->
