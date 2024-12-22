@@ -1,11 +1,9 @@
 ---
-title: ""
-date: 
+title: "<% tp.file.title.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ') %>"
+date: "<% tp.date.now("YYYY-MM-DD") %>"
 description: 
 tags:
-  - langchain
-  - snippets
-url: blog/
+url: "blog/<% tp.file.title %>"
 ---
 
 

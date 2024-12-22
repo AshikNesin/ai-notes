@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NesinIO-AI/content/blog/2024-09/what-works-in-ai-ux-swyx.md",
-                "mode": "preview",
+                "file": "Archives/__templates/Blog Post Template.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "what-works-in-ai-ux-swyx"
+              "title": "Blog Post Template"
             }
           }
         ]
@@ -176,16 +176,18 @@
       "command-palette:Open command palette": false,
       "dbfolder:Create a new database table": false,
       "obsidian-wordpress:WordPress Publish": false,
-      "periodic-notes:Open today": false
+      "periodic-notes:Open today": false,
+      "templater-obsidian:Templater": false
     }
   },
   "active": "36a1748bdaf488f3",
   "lastOpenFiles": [
+    "NesinIO-AI/content/blog/2024-12/hello-word-test-template.md",
+    "NesinIO-AI/content/_index.md",
     "Archives/__templates/Blog Post Template.md",
+    "NesinIO-AI/content/blog/2024-09/what-works-in-ai-ux-swyx.md",
     "NesinIO-AI/Scratchpad.md",
     "NesinIO-AI/content/bookmarks.md",
-    "NesinIO-AI/content/_index.md",
-    "NesinIO-AI/content/blog/2024-09/what-works-in-ai-ux-swyx.md",
     "Resources/assets/Pasted image 20241222205025.png",
     "Resources/assets/Pasted image 20241222205013.png",
     "Resources/assets/Pasted image 20241222204959.png",
@@ -222,7 +224,6 @@
     "Resources/Books & Courses.md",
     "Areas/weekly-notes/2024-W51.md",
     "Areas/weekly-notes/2024-W39.md",
-    "Areas/weekly-notes/2024-W06.md",
     "Resources/assets/Roadmap_How_to_Learn_AI_in_2024_1703437684279_0.pdf",
     "assets",
     "Archives",
