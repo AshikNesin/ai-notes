@@ -1,0 +1,5 @@
+- Prompt Injection
+- https://github.com/asg017/sqlite-vec
+- Quantization
+	- https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-quantization
+- Parameters

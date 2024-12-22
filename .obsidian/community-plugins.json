@@ -1,6 +1,8 @@
 [
   "obsidian-git",
-  "obsidian-omnivore",
   "obsidian-mind-map",
-  "periodic-notes"
+  "periodic-notes",
+  "obsidian-advanced-uri",
+  "dbfolder",
+  "obsidian-wordpress"
 ]

@@ -9,8 +9,9 @@
   - Founder of Coursera & DeepLearning and his courses are pretty good though (though sometime it might feel little slow)
   - For someone getting to AI his [AI for Everyone](https://www.coursera.org/learn/ai-for-everyone) course is a good start
 
-
-## Others
+## YouTube
 - James Briggs
 	- [YouTube](https://www.youtube.com/@jamesbriggs)
+- [Prompt Engineering - YT Channel](https://www.youtube.com/@engineerprompt)
+- [Thu Vu data analytics](https://www.youtube.com/@Thuvu5)
 - 

@@ -1,2 +1,0 @@
-- [RAG But Better: Rerankers with Cohere AI](https://www.youtube.com/watch?v=Uh9bYiVrW_s&ab_channel=JamesBriggs)
-- 

@@ -1,0 +1,20 @@
+- [RAG But Better: Rerankers with Cohere AI](https://www.youtube.com/watch?v=Uh9bYiVrW_s&ab_channel=JamesBriggs)
+- https://github.com/daveebbelaar/langchain-experiments
+- https://matt-rickard.com/tags/ai
+- https://d1.awsstatic.com/events/Summits/reinvent2023/AIM377_Prompt-engineering-best-practices-for-LLMs-on-Amazon-Bedrock.pdf
+- https://saasengineering.substack.com/p/learnings-from-deploying-llms-to
+- Corrective Retrieval Augmented Generation https://arxiv.org/pdf/2401.15884.pdf
+	- https://github.com/langchain-ai/langgraph/blob/main/examples/rag/langgraph_crag_mistral.ipynb
+	- https://github.com/langchain-ai/langgraph/blob/main/examples/rag/langgraph_crag.ipynb
+- Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection
+	- https://arxiv.org/abs/2310.11511
+- https://www.commandbar.com/blog/why-we-built-copilot/
+- https://lightning.ai/lightning-ai/studios/document-search-and-retrieval-using-rag?view=public&section=recent
+- https://wandb.ai/site/model-registry
+- https://arxiv.org/pdf/2402.05929.pdf
+- https://neon.tech/blog/understanding-vector-search-and-hnsw-index-with-pgvector
+- https://twitter.com/ggrdson/status/1757508927275598094
+	- https://supabase.com/blog/matryoshka-embeddings
+- https://www.eversql.com/speed-up-postgresql-pgvector-queries-with-indexes/
+- https://www.firecrawl.dev/
+- 

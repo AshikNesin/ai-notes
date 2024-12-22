@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0f0171d380c34480",
+        "id": "9ccefd245abf9e9d",
         "type": "tabs",
         "children": [
           {
-            "id": "f742107f69fda2d9",
+            "id": "36a1748bdaf488f3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "NesinIO-AI/content/blog/test.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "test"
             }
           }
         ]
@@ -39,7 +41,23 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "42b357e7be946159",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "resources/Talks/AI Engineer World’s Fair 2024 — Keynotes & CodeGen Track.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AI Engineer World’s Fair 2024 — Keynotes & CodeGen Track"
             }
           },
           {
@@ -48,13 +66,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#project-idea",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +82,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -85,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Projects/blog/Scratchpad.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +115,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Scratchpad"
             }
           },
           {
@@ -102,10 +126,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "journals/2024_11_13.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2024_11_13"
             }
           },
           {
@@ -116,7 +142,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -125,8 +153,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
-              }
+                "file": "Projects/blog/Scratchpad.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Scratchpad"
             }
           }
         ]
@@ -144,54 +174,58 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-omnivore:Omnivore": false,
+      "dbfolder:Create a new database table": false,
+      "obsidian-wordpress:WordPress Publish": false,
       "periodic-notes:Open today": false
     }
   },
-  "active": "f742107f69fda2d9",
+  "active": "b69ea5dfba929d93",
   "lastOpenFiles": [
-    "weekly-notes/2024-W06.md",
-    "Resources/Thoughts.md",
+    "NesinIO-AI/content/_index.md",
+    "Resources/assets/2024-12-22 at 18.38.14@2x 1.png",
+    "NesinIO-AI/content/blog/test.md",
+    "Resources/assets/2024-12-22 at 18.38.14@2x.png",
+    "NesinIO-AI/content/hugo.md",
+    "NesinIO-AI/content/bear.md",
+    "NesinIO-AI/content/bookmarks.md",
+    "NesinIO-AI/content/blog/markdown-syntax.md",
+    "NesinIO-AI/content/blog/_index.md",
+    "Projects/learn-in-public/Python.md",
+    "NesinIO-AI/content/blog",
+    "Resources/assets/2024-12-21 at 15.49.39@2x.png",
+    "NesinIO-AI/content",
+    "Areas/journals/2024-11-06.md",
     "Resources/Roadmap.md",
-    "Resources/Read List.md",
-    "README.md",
-    "weekly-notes/2024-week-5.md",
-    "__templates/Weekly Note Template.md",
-    "journals/2024_02_04.md",
-    "pages/contents.md",
+    "NesinIO-AI",
+    "Resources/Thoughts.md",
+    "Resources/Tools.md",
     "Resources/Books & Courses.md",
-    "weekly-notes/Untitled.md",
-    "weekly-notes",
-    "__templates/Daily Log Template.md",
-    "journals/2023_12_01.md",
-    "journals/2023_12_26.md",
-    "journals/2023_12_27.md",
-    "Resources/People.md",
-    "assets/Roadmap_How_to_Learn_AI_in_2024_1703437684279_0.pdf",
-    "assets/2312.05934-Fine-Tuning_or_Retrieval?_Comparing_Knowledge_Injection_in_LLMs_1703663878519_0.pdf",
-    "Untitled.canvas",
-    "Resources",
-    "journals/2023_12_21.md",
-    "__templates",
-    "assets/2023-12-25_at_09.14.48@2x_1703475899693_0.png",
-    "assets/2023-12-24_at_22.48.20@2x_1703438317582_0.png",
-    "assets/2023-12-01_at_22.49.37@2x_1701451184509_0.png",
-    "assets/2023-12-01_at_22.44.10@2x_1701450858233_0.png",
-    "assets/2023-12-01_at_20.13.53_1701441847682_0.png",
-    "journals/2023_12_24.md",
-    "pages/hls__2312.05934-Fine-Tuning_or_Retrieval_Comparing_Knowledge_Injection_in_LLMs_1703663878519_0.md",
-    "pages/hls__Curious_Moon_1701754272864_0.md",
-    "pages/hls__Roadmap_How_to_Learn_AI_in_2024_1703437684279_0.md",
-    "logseq/bak/journals/2023_12_01/2023-12-01T16_07_27.576Z.Desktop.md",
-    "logseq/bak/journals/2023_12_01/2023-12-01T16_06_55.521Z.Desktop.md",
-    "logseq/bak/journals/2023_12_01",
-    "logseq/bak/journals",
-    "logseq/bak",
-    "pages/resources.md",
-    "pages/bookmark.md",
-    "resources/bookmarks.md",
-    "assets/2023-12-01_at_15.35.10@2x_1701439884323_0.png",
+    "Resources/assets/2023-12-01_at_20.13.53_1701441847682_0.png",
+    "NesinIO-AI/Scratchpad.md",
+    "Areas/weekly-notes/2024-W51.md",
+    "Areas/weekly-notes/2024-W39.md",
+    "Areas/weekly-notes/2024-W06.md",
+    "Resources/assets/2024-12-22 at 11.07.41@2x.png",
+    "Resources/assets/Roadmap_How_to_Learn_AI_in_2024_1703437684279_0.pdf",
+    "Areas/pages/hls__Roadmap_How_to_Learn_AI_in_2024_1703437684279_0.md",
+    "Areas/pages/hls__2312.05934-Fine-Tuning_or_Retrieval_Comparing_Knowledge_Injection_in_LLMs_1703663878519_0.md",
+    "Resources/assets/Pasted image 20241221161530.png",
     "assets",
-    "resources"
+    "Areas/weekly-notes/2024-W50.md",
+    "Areas/journals/2024-12-16.md",
+    "README.md",
+    "Areas/journals/2023_12_01.md",
+    "Archives/__templates/Weekly Note Template.md",
+    "Archives/__templates/Daily Log Template.md",
+    "Archives",
+    "Areas",
+    "Projects",
+    "Projects/blog",
+    "Resources/assets/2024-12-12 at 08.32.55@2x.png",
+    "Resources/assets/2024-12-12 at 08.28.50@2x.png",
+    "Resources/assets/2024-12-12 at 08.28.25@2x.png",
+    "Resources/assets/2024-12-12 at 08.27.15@2x.png",
+    "Projects/courses",
+    "Untitled.canvas"
   ]
 }

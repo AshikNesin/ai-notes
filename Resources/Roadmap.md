@@ -6,6 +6,9 @@ AI Engineer
     - [https://bensbites.beehiiv.com](https://bensbites.beehiiv.com/subscribe)
 - Prerequisites: Good Enough
   - Python Programming
+	  - https://egghead.io/courses/introduction-to-the-python-3-programming-language
+	  - Pydandic
+	  - Jpyter
   - DevOps
     - AWS
     - Docker
@@ -14,10 +17,15 @@ AI Engineer
 - Foundation and Terminologies
   - Embedding
     - [https://simonwillison.net/2023/Oct/23/embeddings/](https://simonwillison.net/2023/Oct/23/embeddings/)
+    - https://platform.openai.com/docs/guides/embeddings
+    - https://huggingface.co/blog/getting-started-with-embeddings#1-embedding-a-dataset
+    -  [sentence-transformers](https://www.sbert.net/)
   - LLM
 	  - https://bbycroft.net/llm
 	  - [Catching up on the weird world of LLMs" - Simon Willison](https://www.youtube.com/watch?v=h8Jth_ijZyY&ab_channel=NorthBayPython) 
   - Vector Database
+	  - [Faiss](https://faiss.ai/)
+	  - 
   - Word2Vec
   - Quantization
   - Inference
@@ -29,16 +37,18 @@ AI Engineer
 - Prompt Engineering & Frameworks
   - LangChain
   - LlamaIndex
-  - GPT
-	  - minGPT
-  - Transformers
-	  - https://huggingface.co/docs/transformers/index
+  - Prompt injection
+- GPT
+  - minGPT
+- Transformers
+  - https://huggingface.co/docs/transformers/index
+- What?
+  - Quantization
+  - Hallucination
 ## Community
-- [Kaggle](https://www.kaggle.com)
+- [Kaggle](https://www.kaggle.com) - Learn by doing
 - HuggingFace
 ### Practice
 - https://www.kaggle.com/code/jhoward/first-steps-road-to-the-top-part-1 (Suhail's [tweek](https://twitter.com/Suhail/status/1541293722310025216))
-
 ### Papers
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762v7)
-- 
