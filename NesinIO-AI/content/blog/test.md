@@ -1,7 +1,7 @@
-+++
-title = "Test"
-menu = "main"
-+++
+---
+title: "Test"
+menu: "main"
+---
 
 This is test page
 
