@@ -1,0 +1,3 @@
+🤖 Transformers.js v3.3: Machine Learning and AI for the Web — This is a dry release announcement but I wanted to highlight the rapid pace that this exciting library is making for browser-based NLP, speech recognition, vision, and now text-to-speech use cases (live TTS demo here - it takes a while to load though). It’s also being used in Firefox for various enhancements
+
+https://blog.mozilla.org/en/mozilla/ai/ai-tech/running-inference-in-web-extensions/

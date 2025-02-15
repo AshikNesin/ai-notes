@@ -3,4 +3,5 @@
 -  [https://www.deeplearning.ai](https://www.deeplearning.ai/)
 - [cohere LLM University](https://docs.cohere.com/docs/llmu)
 - https://fullstackdeeplearning.com/llm-bootcamp/spring-2023/
-- 
+- https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=2&ab_channel=AndrejKarpathy
+- https://arxiv.org/abs/2501.09223

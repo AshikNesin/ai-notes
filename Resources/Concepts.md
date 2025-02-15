@@ -3,3 +3,41 @@
 - Quantization
 	- https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-quantization
 - Parameters
+- Transformers
+	- https://www.youtube.com/watch?v=wjZofJX0v4M&ab_channel=3Blue1Brown
+	- https://e2eml.school/transformers.html
+	- https://peterbloem.nl/blog/transformers
+	- https://www.youtube.com/playlist?list=PLIXJ-Sacf8u60G1TwcznBmK6rEL3gmZmV
+	- https://www.youtube.com/watch?v=-QH8fRhqFHM&ab_channel=JayAlammar
+	- https://hackersearch.net/ask?q=best%20way%20to%20learn%20about%20transformers
+-  Neural network
+	- https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&ab_channel=3Blue1Brown
+- LLM
+	- https://www.youtube.com/watch?v=LPZh9BOjkQs&ab_channel=3Blue1Brown
+	- https://www.youtube.com/watch?v=osKyvYJ3PRM&t=45s&ab_channel=MatthewBerman
+- Backprogation
+- LLM Judget
+	- https://hamel.dev/blog/posts/llm-judge/
+- Agents
+	- https://www.insightpartners.com/ideas/state-of-the-ai-agent-ecosystem-use-cases-and-learnings-for-technology-builders-and-buyers/
+	- https://www.insightpartners.com/ideas/state-of-the-ai-agent-ecosystem-use-cases-and-learnings-for-technology-builders-and-buyers/
+	- https://www.kaggle.com/whitepaper-agents
+	- https://huyenchip.com/2025/01/07/agents.html
+	- https://sdk.vercel.ai/docs/ai-sdk-core/agents?s=09
+	- 
+- RAG
+	- https://mer.vin/2024/12/rag-types/
+- How ChatGPT works
+	- https://www.youtube.com/live/flXrLGPY3SU?feature=shared
+	- https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/
+	- https://www.youtube.com/watch?v=bSvTVREwSNw&ab_channel=ByteByteGo
+- Building LLM from Scratch
+	- https://www.youtube.com/playlist?list=PLPTV0NXA_ZSgsLAr8YCgCwhPIJNNtexWu
+	- https://www.youtube.com/watch?v=quh7z1q7-uc&t=648s&ab_channel=SebastianRaschka
+	- https://www.youtube.com/watch?v=ZLbVdvOoTKM&ab_channel=ShawTalebi
+	- https://www.youtube.com/watch?v=kCc8FmEb1nY&ab_channel=AndrejKarpathy
+	- https://www.youtube.com/watch?v=zduSFxRajkE&ab_channel=AndrejKarpathy
+- Model Context Protocol
+	- https://github.com/modelcontextprotocol
+	- https://modelcontextprotocol.io/introduction
+	- 

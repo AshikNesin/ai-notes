@@ -1,8 +1,9 @@
 [
-  "obsidian-git",
   "obsidian-mind-map",
   "periodic-notes",
   "obsidian-advanced-uri",
   "dbfolder",
-  "templater-obsidian"
+  "templater-obsidian",
+  "obsidian-excalidraw-plugin",
+  "wallabag"
 ]

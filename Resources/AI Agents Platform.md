@@ -1,0 +1,4 @@
+- https://beam.ai
+	- https://www.youtube.com/watch?v=egX6QeuaJRg&ab_channel=Beam
+- [How to Build Effective AI Agents (without the hype)](https://www.youtube.com/watch?v=tx5OapbK-8A&ab_channel=DaveEbbelaar)
+- 
