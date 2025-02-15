@@ -1,6 +1,0 @@
-{
-  "format": "YYYY-MM-DD",
-  "template": "Archives/__templates/Daily Log Template",
-  "autorun": false,
-  "folder": "Areas/journals"
-}
