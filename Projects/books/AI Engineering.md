@@ -3,200 +3,172 @@ title: "AI Engineering"
 author: "Chip Huyen"
 
 ---
-# Chapter 1. Introduction to Building AI Applications with Foundation Models
-- People/Teams are using AI to:
-	- Increase their productivity
-	- Create economic value
-	- Improve quality of life
-- **Modal as service** which is done by few companies (OpenAI, Google, Anthropic, etc) made AI as a ==commodity== -- barrier for entry has decreased drastically.
-- Building a foundation modal is damn expensive - requires data, compute resources and specialised talent
-- Even before the LLM became prominent, AI was already powering lot of applications -- product recommendation, fraud detection, etc which were built using traditional ML models
+# Chapter 1: Introduction to Building AI Applications with Foundation Models
 
-> As AI Engineer, we need to understand **what AI is good and not yet good at**. 
+## Why AI Matters
+
+People/Teams are using AI to:
+- Increase productivity
+- Create economic value
+- Improve quality of life
+
+**Model as a Service** provided by companies like OpenAI, Google, and Anthropic has made AI a **commodity**, drastically reducing entry barriers.
+
+### Challenges in Building Foundation Models
+
+- Expensive: Requires vast amounts of data, compute resources, and specialized talent.
+- AI existed before LLMs: Traditional ML models powered applications like product recommendations and fraud detection.
+
+> **As AI Engineers, we need to understand what AI is good at and what it struggles with.**
+
+---
 
 ## Rise of AI Engineering
 
-### Language Model
+### Evolution of Language Models
 
-- ML → Language Model → LLM
-- First LM started emerging in 1950s. 
+- ML → Language Models (LM) → Large Language Models (LLM)
+- **First language models** emerged in the 1950s.
 
-**How LM to LLM?**
-They were able to grow to today's scale because of ==self-supervision==
+#### How did LM evolve into LLM?
 
-**Language models**
-- LM **encodes statistical information** about one (older models) or more language
-- This information helps us to predict ==how likely a word is to appear in a given context==
-- Example: 
-	- Context: "My favorite color is ____"
-	- LM that encodes English should predict "blue" more often than a "car"
-- Statistical nature of languages was discovered centuries ago 
-	- 1905 - [The Adventure of the Dancing Man](https://freedium.cfd/https://medium.com/ml-hobbyist/what-sherlock-holmes-can-teach-us-about-large-language-models-5a84ea5344a4) story - leveraging statistical information of English to decode sequence of mysteries stick figures 
-		- https://josmfs.net/wordpress/wp-content/uploads/2021/12/Dancing-Men-211028.pdf
-	- 1951 - [Prediction and Entropy of Printed English](https://www.princeton.edu/~wbialek/rome/refs/shannon_51.pdf) paper - statistics to decipher enemies' messages during WW2. It introduced many concepts like entropy which are used in LM today.
-### Tokens
-- Basic unit of language model is token
-- ==A token can be a character, a word or a part of word (like -tion), depending on the model
-- https://platform.openai.com/tokenizer 👇
+- **Self-supervision** enabled models to scale massively.
+- LMs **encode statistical information** about language(s), allowing them to predict word likelihoods.
+
+**Example:**
+
+- Context: "My favorite color is ____"
+- An English LM would predict "blue" over "car."
+
+### Statistical Nature of Language Models
+
+- **1905:** Sherlock Holmes’ _[The Adventure of the Dancing Men](https://medium.com/ml-hobbyist/what-sherlock-holmes-can-teach-us-about-large-language-models-5a84ea5344a4#bypass)_ used statistical language patterns.
+- **1951:** _[Prediction and Entropy of Printed English](https://www.princeton.edu/~wbialek/rome/refs/shannon_51.pdf)_ paper applied statistical methods to decode messages during WWII.
+
+---
+
+## Tokens: The Building Blocks of LMs
+
+- **A token** can be a character, a word, or a word segment (e.g., “-tion”).
+- Tokenization is the process of breaking text into tokens.
+- OpenAI tokenization: ~100 tokens ≈ 75 words (roughly ¾ of a word).
+
+**Why use tokens instead of text?**
+
+- Models work with a **finite vocabulary** of tokens (which is decided by model developers)
+- Tokens allow efficient word construction: e.g., _cooking_ = _cook_ + _ing_.
+- Helps with unknown words: _chagpting_ → _chatgpt_ + _ing_.
 
 ![[2025-02-14 at 08.57.48@2x.png]]
 - The token ids (numerical identifiers) for the above texts - `[15390, 7524, 1078, 1495, 6602, 2860, 5882, 20255, 5861]`
-- The process of breaking down original text into tokens is called `tokenization`
-- Thumb rule - roughly ¾ of a word (so 100 tokens ~= 75 words) for OpenAI models
-- Similarly for other model - https://tiktokenizer.vercel.app
+### OpenAI’s Tokenization Resources
 
-**Why LM uses token instead of text?**
-- The set of all the tokens that a model can work with is the model's *vocabulary*
-- We can use small number of tokens to construct a large number of ==distinct words== – similar to how few letters in alphabet to construct many words
-- OpenAI model vocabulary
-	- https://github.com/openai/tiktoken/blob/main/tiktoken/model.py
-	- https://openaipublic.blob.core.windows.net/encodings/o200k_base.tiktoken (text is encoded into base64)
-- Tokenization method and vocabulary size are decided by model developers
-- TLDR
-	- Compared to characters, tokens allow the model to break words into meaningful components. cook+ing = cooking. With both word carrying some meaning of original word.
-	- Fewer unique tokens === reduced model's vocabulary size
-	- Process unknown words. chagpting = chatgpt + ing
-
-### Types of Language Models
-1. Masked language models
-2. Autoregressive language models
-#### Masked language model - MLM
-- It is trained to predict missing tokens anywhere in the sequence -- using context from ==both before and after== the missing tokens. Essentially, trained to fill in the blank.
-- Example model: [BERT](https://arxiv.org/pdf/1810.04805) (Bidirectional Encoder Representations from Transformers)
-- Use cases:
-	- Non generative tasks like sentiment analysis and text classification
-- Example:
-	- My favourite ___ is blue. Model will predict "color"
-
-
-#### Autoregressive language model
-- It is trained to predict the next token in a sequence, using only the ==preceding tokens==
-- It can continually generate one token after another.
-- Use cases:
-	- Text generation
-- Example:
-	- My favourite color is ___ Model will predict "blue"
-
-![[Pasted image 20250215090148.png]]
+- [Tokenizer Tool](https://platform.openai.com/tokenizer)
+- [Vocabulary File](https://openaipublic.blob.core.windows.net/encodings/o200k_base.tiktoken)
 
 ---
-- The output of language models are **open ended**
-- It uses it's fixed, finite vocabulary to construct infinite possible outputs
-- A model that can `generate open-ended output` → `generative` → `generative AI`
-- LM are ==completion machine==: Give a text (prompt), it tries to complete the text
-	- Completions are predictions, based on probabilities, and not guaranteed to be correct
-	- Probabilistic nature: exciting and frustrating to use
 
-#### Self-supervision 🙌
-**What's special about LM that caused ChatGPT moment?**
-TLDR: LM can be trained using  self-supervision
+## Types of Language Models
 
-**Supervision:**
-- Supervision refers to the process of training ML algorithms using labeled data -- expensive, slow to obtain (bottleneck)
-	1.	Label examples: Show the model what behavior you want it to learn.
-	2.	Train the model: Use labeled examples to teach the model.
-	3.	Apply to new data: Use the trained model on new, unseen data.
+### 1. Masked Language Models (MLM)
 
-- 2010s AI models were built on supervision like [AlexNet](https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
-- AlexNet:
-	- Started deep learning revolution
-	- Trained on ImageNet
-	- It classified each of the image into one of the 1,000 categories like "car", "cat", "balloon", etc
-- Supervision drawbacks: expensive and time-consuming
-- Labeling everyday objects: relatively cheap, no expert training needed. However, specialized labeling (e.g., CT Scan) requires expertise and is expensive
+- **Trained to predict missing tokens** using context before and after.
+- Example: [BERT](https://arxiv.org/pdf/1810.04805)
+- **Use Cases:** Sentiment analysis, text classification.
 
-**Self-supervision:** 
-- Self-supervision helps to overcome drawbacks of supervision.
-- In self-supervision, instead of requiring explicit labels, the model can infer labels from the input data.
-- Language modeling is self-supervised, because ==each input sequence provide both the labels (tokens to be predicted) and the context the model can use to predict these labels ==
+**Example:**
 
-Training samples for the sentence "I love reading books.":
+- "My favorite ____ is blue." → Model predicts "color."
 
-| Input (context) | Output (next token) |
-|-----------------|-------------------|
-| `<BOS>`| I |
-| `<BOS>`, I | love |
-| `<BOS>`, I, love | reading |
-| `<BOS>`, I, love, reading | books |
-| `<BOS>`, I, love, reading, books | . |
-| `<BOS>`, I, love, reading, books, . | `<EOS>` |
+### 2. Autoregressive Language Models (ARLM)
 
-- `<BOS>` and `<EOS>` mark beginning and end of sequence.  Each marker is typically treated as __one special token__ by the model
-- EOS is really important because it helps LMs know when to end their responses.
+- **Trained to predict the next token** using preceding tokens.
+- Can **generate** text sequentially.
+- **Use Cases:** Text generation, conversation models.
 
-**From LM to LLM:**
-- Self-supervised learning means LMs can learn from text sequences without requiring any labeling.
-- Text sequences are everywhere in the internet -- blog posts, books, reddit comments and other pirated content (which is commonly used by most AI companies 😅)
-- It is possible to construct a massive training data, allowing language models to scale up to become LLMs
+**Example:**
 
-**LLM:**
-- Hardly a scientific term -- subjective
-- What is LLM today might be tiny tomorrow.
-- Model's size is typically measured by it's **number of parameters**
-- ==**Parameters** -- A variable within a ML model that is updated though the training process.==
-- In general, more parameters === greater it's capacity to learn desired behaviours.
+- "My favorite color is ____" → Model predicts "blue."
 
-#### From Large Language Models to Foundation Models
-- Perceiving the world is not just about language, but also involves other senses like vision, hearing, touch, and more.
-- To be useful in the real world, AI needs to support multiple modalities. Recent Language Models (LM) are starting to support this.
-* Foundation models:
-	+ Can be built upon for different needs
-	+ Breakthrough from traditional AI research structure
-		+ Divided by data modalities:
-			- **NLP**: Text only
-			- **Computer Vision**: Vision only
-			* Model Examples:
-				+ **Text only**:
-					- Translation
-					- Spam detection
-				+ **Image only**:
-					- Object detection
-					- Image classification
-				+ **Audio only**:
-					- Speech recognition (STT) - speech-to-text
-					- Speech synthesis (TTS) - text-to-speech
-#### Multimodal Model
-- A model that can work with more than one modality is called **multimodal model**. 
-- A generative multimodal modal -- Large multimodal model (LMM)
-- Multimodal models generate tokens based on both text and image (or other supported modalities), unlike language models which only use text.
-	- ![[Pasted image 20250215111244.png]]
-- Similar to LM, LMM also need data to scale up -- self supervision works for multimodal models as well.
-- OpenAI used varient of self-supervision called natural language supervision to train [CLIP](https://openai.com/index/clip/)
-	- Instead of manually labeling image and text pair, they found it on the internet.
-	- Using it the were able to generate a dataset of 400 million (image, text) pairs without manual labeling cost.
-	- CLIP become the first model that could handle multiple image classification tasks without requiring additional training.
-	- CLIP is embedding model (not generative) -- capture meanings of the original data.
-	- Multimodal embedding are backbone of generative multimodal models like Flamingo, LLaVA, etc
-- Foundation model: transition from task-specific models to general purpose models.
-	- Previously, models were generated for specific task.
-	- You can tweak general-purpose model to maximize its performance on specific task (generating product description with brand's style)
+---
 
-#### Tuning model's response
-- Prompt Engineering: Detailed instructions with examples of the desirable outcome
-- RAG: Using external context to supplement the instructions
-- Finetune: Further train the model on a dataset of high quality dataset
-- FM make it cheaper to develop AI applications and ==reduce time to market==
+## Self-Supervision: The Game-Changer
 
-### From FM to AI Engineering
-> AI Engineering refers to process of ==building applications on top of foundation models==
-- Traditional ML - developing ML models
-- AI Engineering - leveraging existing ones
+### Supervised Learning
 
-Powerful foundation models leads these factors that lead to rapid growth of AI engineering as a discipline
-1. General purpose AI capabilities
-	- FM models are powerful because they can do more tasks, not just existing tasks better.
-		- They make previously impossible tasks possible.
-		- They enable apps that were not thought of to emerge.
-		- They might even make currently impossible applications possible tomorrow.
-2. Increased AI investments
-	- Success of ChatGPT led to sharp increase in investments in AI.
-	- As AI applications become cheaper to build and faster to go to market. ROI for AI become more attractive.
-	- AI is mentioned as competitive advantage
-	- Companies that mentioned AI in earning calls saw stock price increase more than those that didn't (avg 4.6%, compared to 2.4%)
-3. Low barrier to entry to build AI applications
-	- Model as service approach -- exposes model via API that receive user queries and return model outputs.
-	- Without these APIs, using AI model require infra to host and serve this model -- which is way too expensive
-	- Work with the model with English. No special language is required.
+- Requires **labeled** data.
+- **Expensive** and slow to obtain (e.g., medical image labeling).
+
+### Self-Supervised Learning
+
+- **Removes the need for explicit labels.**
+- LMs learn from massive text data without human annotation.
+- Example: Predicting the next word in a sentence.
+
+**Training Data Example:**
+
+|Input (context)|Output (next token)|
+|---|---|
+|`<BOS>`|I|
+|`<BOS>`, I|love|
+|`<BOS>`, I, love|reading|
+
+- **`<BOS>` (beginning of sequence)** and **`<EOS>` (end of sequence)** help the model structure responses.
+- **Self-supervised training enabled scaling LMs into LLMs.**
+
+---
+
+## From Large Language Models to Foundation Models
+
+- AI is not just about language; it must support multiple **modalities** (vision, audio, text, etc.).
+
+### Foundation Models
+
+- **General-purpose AI models** built upon for various tasks.
+- Different data modalities:
+    - **Text**: Translation, spam detection.
+    - **Image**: Object detection, classification.
+    - **Audio**: Speech recognition (STT), speech synthesis (TTS).
+
+### Multimodal Models
+
+- **Can process multiple types of data** (e.g., text + image).
+- **Generative multimodal models** = Large Multimodal Models (LMMs).
+- **Example:** OpenAI’s [CLIP](https://openai.com/clip) used **self-supervision** to process **400M image-text pairs** without manual labeling.
+
+---
+
+## Fine-Tuning and Enhancing Model Responses
+
+### Three Main Methods:
+
+1. **Prompt Engineering:** Writing detailed instructions with examples.
+2. **Retrieval-Augmented Generation (RAG):** Using external context to supplement prompts.
+3. **Fine-Tuning:** Training the model on domain-specific data for better performance.
+
+**Foundation Models Lower AI Development Costs & Time-to-Market.**
+
+---
+
+## The Rise of AI Engineering
+
+> **AI Engineering = Building applications on top of foundation models.**
+
+**Traditional ML vs. AI Engineering:**
+
+- ML: Developing new models.
+- AI Engineering: Leveraging existing models.
+
+### Factors Driving AI Engineering Growth
+1. **General-purpose AI capabilities**
+    - AI is **not just improving tasks** but enabling **new applications**.
+2. **Increased AI Investments**
+    - ChatGPT’s success led to **massive AI investments**.
+    - Companies mentioning AI saw **higher stock gains**.
+3. **Lower Entry Barriers**
+    - **Model as a Service (API-based)** makes AI accessible without complex infrastructure.
+
+---
 
 ### Foundation Model Use Cases
 - The potential use case of foundation models are vast and continuously evolving.
@@ -205,107 +177,148 @@ Powerful foundation models leads these factors that lead to rapid growth of AI e
 	- A task/field is exposed if AI and AI-powered software can reduce the time needed to complete this task by at least 50%
 	- ![[2025-02-15 at 13.10.03@2x.png]]
 
-#### Enterprise & Consumer Applications
+## Enterprise & Consumer Applications
 
-> Note: I was using AI to summarize key insights. Read the book to get full context about it.
+> **Note:** These insights are AI-generated summaries. For full context, read the book.
 
-| **Category**           | **Consumer Examples**          | **Enterprise Examples**        |  
-|------------------------|--------------------------------|--------------------------------|  
-| **Coding**            | Coding           | Coding    |  
-| **Image/Video**      | Profile pics, editing apps    | Ad & marketing content       |  
-| **Writing**          | Emails, blogs, social media  | Copywriting, SEO, reports    |  
-| **Education**        | AI tutors, essay grading      | Employee upskill training, onboarding |  
-| **Conversational Bots** | AI companions, chatbots    | Customer support, product copilots |  
-| **Information Aggregation** | Summarization, Chat with docs | Summarization, Market research|  
-| **Data Organization** | Image search, document search | Document processing & knowledge management |  
-| **Workflow Automation** | Travel & event planning | Data extraction, Lead generation, automation tools |  
+### AI Applications Across Categories
 
-- **AI applications often overlap categories** (e.g., a chatbot can also summarize information).  
-- **Enterprise AI adoption is faster for internal-facing apps** due to lower risk.  
-	- Internal application helps develop their AI engineering expertise while minimizing the risk associated with it.
-![[Pasted image 20250215153537.png]]
+| **Category**                | **Consumer Examples**             | **Enterprise Examples**             |
+|-----------------------------|-----------------------------------|-------------------------------------|
+| **Coding**                  | Code generation, debugging        | Developer copilots, automation      |
+| **Image/Video**             | Profile pics, editing apps        | Ad & marketing content              |
+| **Writing**                 | Emails, blogs, social media       | Copywriting, SEO, reports           |
+| **Education**               | AI tutors, essay grading          | Employee training, onboarding       |
+| **Conversational Bots**     | AI companions, chatbots           | Customer support, product copilots  |
+| **Information Aggregation** | Summarization, Chat with docs     | Market research, reporting          |
+| **Data Organization**       | Image/document search             | Knowledge management, processing    |
+| **Workflow Automation**     | Travel & event planning           | Lead generation, data extraction    |
 
-**Coding:**
-- One of the earliest success of FM in production is GitHub Copilot -- code completion tool.
-	- [$100M ARR](https://www.theinformation.com/briefings/microsoft-github-copilot-revenue-100-million-ARR-ai), 2 year after launch
-- Other than general coding, there are tools that specialise in certain coding tasks
+### Key Takeaways
 
-| **Task**                                       | **Example Tools**                                                                                                                                      |
-| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Extract structured data                        | [AgentGPT](https://github.com/reworkd/AgentGPT)                                                                                                        |
-| Convert English to code                        | [DB-GPT](https://github.com/eosphoros-ai/DB-GPT), [SQL Chat](https://github.com/sqlchat/sqlchat), [PandasAI](https://github.com/Sinaptik-AI/pandas-ai) |
-| Generate website code from designs/screenshots | [screenshot-to-code](https://github.com/abi/screenshot-to-code), [draw-a-ui](https://github.com/sawyerhood/draw-a-ui)                                                                               |
-| Translate between languages/frameworks         | [GPT-Migrate](https://github.com/joshpxyne/gpt-migrate), [AI Code Translator](https://github.com/mckaywrigley/ai-code-translator)                      |
-| Write documentation                            | [Autodoc](https://github.com/context-labs/autodoc)                                                                                                     |
-| Create tests                                   | [PentestGPT](https://github.com/GreyDGL/PentestGPT)                                                                                                    |
-| Generate commit messages                       | [AI Commits](https://github.com/Nutlope/aicommits)                                                                                                     |
+- **AI applications overlap** (e.g., chatbots also summarize info).
+- **Enterprise AI adoption is faster for internal apps** due to lower risk and AI expertise development.
 
-Note: Looks like majority of the repo is not active anymore.
+### AI’s Impact on Coding
 
-- AI can help developers be twice productive for documentation
-- 25-50% more productive for code generation and refactoring
-- Regardless of whether AI will replace software engineers, It can certainly make  companies more productive. 
-	- Disrupt the outsourcing industry, since outsourced tasks tend to be simpler ones outside of a company's code business.
+- **GitHub Copilot**: First major AI coding tool, reaching [$100M ARR](https://www.theinformation.com/briefings/microsoft-github-copilot-revenue-100-million-ARR-ai) within 2 years.
+- **Specialized AI coding tools** exist for:
+  - Extracting structured data → [AgentGPT](https://github.com/reworkd/AgentGPT)
+  - Converting English to code → [DB-GPT](https://github.com/eosphoros-ai/DB-GPT), [SQL Chat](https://github.com/sqlchat/sqlchat)
+  - Generating UI from screenshots → [screenshot-to-code](https://github.com/abi/screenshot-to-code)
+  - Translating code between languages → [GPT-Migrate](https://github.com/joshpxyne/gpt-migrate)
+  - Writing documentation → [Autodoc](https://github.com/context-labs/autodoc)
+  - Creating tests → [PentestGPT](https://github.com/GreyDGL/PentestGPT)
+  - Generating commit messages → [AI Commits](https://github.com/Nutlope/aicommits)
 
-**Image and Video Production:**
-- AI is well-suited for creative tasks due to its probabilistic nature
-- Successful AI startups in creative applications: 
-	- **Midjourney** (image generation) 
-	- **Adobe Firefly** (photo editing) 
-	- **Runway, Pika Labs, Sora** (video generation) 
-	- Midjourney reached **$200M ARR** in 1.5 years (late 2023).
-- Perception shift:
-	- **2019**: Facebook banned AI-generated profile pictures for safety reasons.
-	- **2023**: Many social media apps offer AI profile picture tools.
+### AI’s Productivity Boost
 
-**AI in Advertising and Marketing**
-- For enterprise, ads and marketing have been quick to incorporate AI.
-- AI can generate **promotional images and videos** directly.
-- It can also assist with brainstorming & coming up with initial version for human iteration.
-- A/B testing: Generating multiple ad variants
-- AI can **adjust ads seasonally and geographically**. Eg:  Changing leaf colors in fall or Adding snow in winter.
+- **2x faster documentation writing**.
+- **25-50% more productive** in code generation & refactoring.
+- **Disrupts outsourcing** by automating simple coding tasks.
 
-**Writing:**
-- AI has long been used to aid writing -- autocorrection and auto-completion feature in the smartphone is powered by AI
-- For consumers, may use AI to communicate better.
-- Unlike traditional books, AI generated books can be interactive.
-	- A child's book identifies the words that a child has trouble with and generates stories centered around that word.
-- It is kind of good with SEO -- maybe because it is trained on the internet dataset.
-- - AI's ability to write can be abused.
-	- Amazon is flooded with AI-generated books (AI slop)
-	- Content farms -- junk website to make money from ads
-**Education:**
-- **Students depend on AI for homework** – Schools banned it but later allowed it.  
-- **AI personalizes learning** – Adapts to different styles (audio, visual, coding).  
-- **AI boosts language learning** – Duolingo uses it for lesson personalization.  
-- **AI creates & evaluates content** – Quizzes, essays, debates, and feedback.  
-- **AI-powered tutors are rising** – Khan Academy and similar platforms.  
-- **Traditional education companies struggle** – Chegg’s stock crashed as AI replaced it.  
-- **AI speeds up skill learning** – Helps students learn faster and surpass AI.  
+---
 
-**Conversational Bots:**
-- **Conversational bots are highly versatile** – They assist with information, brainstorming, and even act as digital companions or therapists.  
-- **AI companions are rapidly growing** – Digital relationships are becoming common, sparking concerns about their impact on dating.  
-- **Bots can simulate societies** – Researchers use them to study social dynamics.  
-- **Customer support bots are a major enterprise use case** – They reduce costs and improve response times.  🙌
-- **AI copilots simplify complex tasks** – Helping users with taxes, insurance claims, and corporate policies.  
-- **ChatGPT triggered a surge in conversational bots** – But voice assistants (Siri, Alexa) and 3D AI characters are also gaining traction.  
-- **AI is revolutionizing NPCs in gaming** – Smarter, dynamic NPCs enhance experiences in games like The Sims and Skyrim.  
+## Image & Video Production
 
-**Information Aggregation**
-- **AI helps manage information overload** – Summarizes emails, Slack messages, and news.  
-- **74% of generative AI users rely on it for summarization** – Salesforce’s 2023 research.  
-- **AI enables "talk-to-your-docs"** – Retrieve info from contracts, papers, and disclosures conversationally.  
-- **AI streamlines research and reporting** – Helps summarize and compare papers efficiently.  
-- **Enterprises benefit from AI-driven info aggregation** – Reduces middle management burden.  
-- **Instacart’s "Fast Breakdown" prompt is highly popular** – AI summarizes meetings, emails, and Slack discussions into action items.  
-- **AI enhances competitive analysis** – Surfaces key customer insights and competitor trends.  
-- **Information aggregation and organization go hand in hand** – AI structures and distills vast amounts of data.  
+- AI excels in **creative tasks** due to its probabilistic nature.
+- Major AI startups in creative fields:
+  - **Midjourney** (image generation) → [$200M ARR in 1.5 years (2023)](https://midjourney.com/)
+  - **Adobe Firefly** (photo editing)
+  - **Runway, Pika Labs, Sora** (video generation)
+- **Perception shift:** AI-generated profile pics went from being banned (2019) to mainstream (2023).
 
-**Data Organization:**
-- **Data production will keep increasing** – More photos, videos, logs, and contracts are generated every year.  
-- **AI helps organize and search unstructured data** – Generates descriptions for images/videos and matches text queries with visuals.  
-- **AI-powered search is already mainstream** – Google Photos and Image Search use AI to surface or even generate relevant images.  
-- **AI excels at data analysis** – Can create visualizations, detect outliers, and make predictions (e.g., revenue forecasts).  
-- **AI extracts structured data from unstructured sources** – Automates tasks like reading credit cards, receipts, and email footers.  
-- **Enterprises benefit from AI-driven data organization** – Extracts insights from contracts, reports, and charts.  
+### AI in Advertising & Marketing
+
+- AI **generates promotional content** directly.
+- Helps with **brainstorming & content iteration**.
+- **A/B testing**: Generates multiple ad variants.
+- **Adaptive ads**: Adjusts visuals seasonally/geographically (e.g., changing leaves for fall).
+
+## Writing
+
+- AI enhances writing via **autocorrection & autocomplete**.
+- **SEO-friendly content** (trained on web data).
+- **Interactive AI books** (e.g., children's books adapt to words they struggle with).
+- **Content farming issues**:
+  - AI-generated books flood Amazon.
+  - Junk websites exploit AI for ad revenue.
+
+## Education
+
+- **AI-powered homework assistants** – Initially banned, now accepted.
+- **Personalized learning** – Adapts to visual, audio, or coding styles.
+- **Language learning** – Used by Duolingo.
+- **AI-generated & evaluated content** – Quizzes, essays, feedback.
+- **AI tutors rising** – Khan Academy and similar platforms.
+- **Disrupts traditional education** – Chegg’s stock crashed due to AI competition.
+- **Speeds up learning** – Helps students outpace AI itself.
+
+## Conversational Bots
+
+- **AI companions are growing** – Digital relationships becoming common.
+- **Bots simulate societies** – Used for research in social dynamics.
+- **Customer support AI** – Reduces costs, improves response times.
+- **AI copilots simplify complex tasks** – Helps with taxes, insurance, policies.
+- **Revolutionizing NPCs in gaming** – Smarter, dynamic characters.
+
+## Information Aggregation
+
+- **Tackles information overload** – Summarizes emails, Slack, news.
+- **74% of GenAI users use it for summarization** (Salesforce 2023).
+- **"Talk-to-your-docs" feature** – Extracts contract/paper insights via chat.
+- **Enterprise adoption** – AI reduces middle-management burden.
+- **Instacart’s "Fast Breakdown" prompt** – Summarizes meetings into action items.
+- **Enhances competitive analysis** – Surfaces key trends & insights.
+
+---
+
+## Data Organization
+
+- **Data production is increasing** – More images, logs, reports.
+- **AI organizes & searches unstructured data** – Generates metadata & improves search.
+- **AI-powered search is mainstream** – Google Photos, AI-generated search results.
+- **AI excels in data analysis** – Creates visualizations, detects trends, predicts outcomes.
+- **Extracts structured data** – Reads receipts, credit cards, emails.
+- **Enterprises use AI for knowledge management** – Extracts insights from contracts & reports.
+
+## Workflow Automation
+- **End-user Automation:** Automates everyday tasks like booking restaurants, planning trips, and filling forms.
+- **Enterprise Automation:** Streamlines repetitive tasks (lead management, invoicing, data entry) and leverages AI for data synthesis.
+- **AI Agents:** Integrates external tools to significantly boost productivity and economic value.
+- **Selective Development:** Not every potential AI application should be built.
+
+---
+
+## Planning AI Application
+- It is easier to build cool demo with foundation models. It's very hard to create a profitable product.
+
+- **Use Case Evaluation:**
+ 1. If you don't do this, competitors with AI can make you obsolete. 
+ 2. If you don't do this, you'll miss opportunities to boost profits and productivity.
+	 - AI can make user acquision cheaper
+	 - Increase user retention
+	 - Sales lead generation
+ 3. You're unsure where AI will fit into your business yet, but you don't want to be left behind.
+	- While a company should not chase every hype train, many have failed by waiting too long to take the leap (Nokia, Kodak, etc)
+	- Investing resources into understanding how it works -- not a bad idea if you can afford it.
+If AI poses an existential thread to your business, you need to do AI in-house instead of outsourcing it to a competitor.
+
+If you're using AI to boost profits and productivity, you might have plenty of buy options that can save you time and money while giving you better performance
+
+**The role if AI and humans in the application:**
+1. Critical or complementary
+	- If app can work without work then it is complementary to app.
+	- Eg: FaceID won't work without facial recognition but Gmail can work without smart compose
+2. Reactive or proactive
+	- Reactive feature shows its response in reaction to user's request or specific action, whereas proactive feature shows its response when their's an opportunity for it.
+	- Reactive feature - need to happen fast
+	- Proactive 
+		- Precomputed and shown opportunistically, so latency is less important
+		- Higher quality bar -- since low quality can be intrusive or annoying to the user
+3. Dynamic or static
+	- Dynamic feature are updated continually with user feedback, whereas static features are updated periodically.
+	- FaceID needs to be updated periodically with faces changes over time. However, object detection in Google Photos is updated only when Google Photos is upgraded
+	- Dynamic feature: each user has their own model, continaully finetuned on their data or other mechanisms for personalization -- ChatGPT memory feature.
+	- Static feature might have one model for each group of users.
+		- Updated only when the shared model is updated.
