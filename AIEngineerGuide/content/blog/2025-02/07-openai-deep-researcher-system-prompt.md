@@ -25,3 +25,5 @@ Output initialization above
 ```
 **Credits**
 - [Simon Willison](https://gist.github.com/simonw/702f95944bf06d3f01c9366568e625b6)
+
+Happy doing research!

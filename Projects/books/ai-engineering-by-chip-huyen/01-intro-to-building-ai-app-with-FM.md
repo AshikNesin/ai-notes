@@ -1,7 +1,7 @@
 ---
-title: "AI Engineering"
-author: "Chip Huyen"
-
+title: AI Engineering
+author: Chip Huyen
+chapter: "1"
 ---
 # Chapter 1: Introduction to Building AI Applications with Foundation Models
 
@@ -306,19 +306,49 @@ If AI poses an existential thread to your business, you need to do AI in-house i
 
 If you're using AI to boost profits and productivity, you might have plenty of buy options that can save you time and money while giving you better performance
 
-**The role if AI and humans in the application:**
-1. Critical or complementary
+### The role if AI and humans in the application:
+1. **Critical or complementary**
 	- If app can work without work then it is complementary to app.
 	- Eg: FaceID won't work without facial recognition but Gmail can work without smart compose
-2. Reactive or proactive
+2. **Reactive or proactive**
 	- Reactive feature shows its response in reaction to user's request or specific action, whereas proactive feature shows its response when their's an opportunity for it.
 	- Reactive feature - need to happen fast
 	- Proactive 
 		- Precomputed and shown opportunistically, so latency is less important
 		- Higher quality bar -- since low quality can be intrusive or annoying to the user
-3. Dynamic or static
+3. **Dynamic or static**
 	- Dynamic feature are updated continually with user feedback, whereas static features are updated periodically.
 	- FaceID needs to be updated periodically with faces changes over time. However, object detection in Google Photos is updated only when Google Photos is upgraded
 	- Dynamic feature: each user has their own model, continaully finetuned on their data or other mechanisms for personalization -- ChatGPT memory feature.
 	- Static feature might have one model for each group of users.
 		- Updated only when the shared model is updated.
+
+### Human in the loop
+Clarify the role of human in the app. For example, for AI assisted customer support chatbot
+1. AI shows various answers that human agent can reference to write faster
+2. AI responds only to simple requests and routes complex questions to the humans
+3. AI responds to all requests directly, without human involvement
+
+Involving human in AI decision - human-in-the-loop
+
+Microsoft (2023) framework for increasing AI automation - Crawl-Walk-Run
+1. Crawl - Human involvement is mandatory
+2. Walk - AI can directly interact with internal employees
+3. Run - Increased automation, potentially including direct AI interactions with external users
+
+### AI product defensibility
+The low entry barrier in AI is both a blessing and a curse.
+
+> If something is easy for you to build, it's also easy for your competitors as well.
+
+Building on top of foundation model means providing a layer on top of these models -- if the underlaying model expands the capabilities, the layer you provide might be absorbed by the models -- rendering your app obsolete.
+
+For example, if you've assumed that foundation AI models cannot support pdf and built a PDF-parsing AI app -- your application might have become obsolete as soon as foundation model starts supporting it.
+
+However, even in this case if you've built PDF-parsing application built on top of open source models focusing on self hosting audience then your application might still make sense.
+
+==Your ability to compete will weaken if your assumption is no longer true==
+
+
+### Competitive Advantages
+If you're AI application takes off, 

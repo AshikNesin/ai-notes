@@ -40,4 +40,9 @@
 - Model Context Protocol
 	- https://github.com/modelcontextprotocol
 	- https://modelcontextprotocol.io/introduction
+	- https://www.youtube.com/watch?v=kQmXtrmQ5Zg&ab_channel=AIEngineer
+	- https://www.anthropic.com/news/model-context-protocol
+	- https://docs.cursor.com/context/model-context-protocol
+- seq2seq
+	- https://www.youtube.com/watch?v=zbdong_h-x4&t=51s&ab_channel=GoogleCloudTech
 	- 
