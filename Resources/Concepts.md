@@ -43,6 +43,26 @@
 	- https://www.youtube.com/watch?v=kQmXtrmQ5Zg&ab_channel=AIEngineer
 	- https://www.anthropic.com/news/model-context-protocol
 	- https://docs.cursor.com/context/model-context-protocol
+	- https://x.com/AtomSilverman/status/1897409286466363626
+	- https://docs.cline.bot/mcp-servers/mcp-server-from-scratch
+	- https://cline.bot/blog/building-the-mcp-economy-lessons-from-21st-dev-and-the-future-of-plugin-monetization
+	- https://x.com/levelsio/status/1898139290053247167
+	- https://x.com/businessbarista/status/1897493677347369169
+	- https://github.com/modelcontextprotocol/specification/discussions/102
+	- https://gist.github.com/xyc/274394031b41ac7e8d7d3aa7f4f7bed9
+	- https://www.youtube.com/watch?v=eD0uBLr-eP8&ab_channel=JackHerrington
+	- https://www.youtube.com/watch?v=plOr2fNhb1I&ab_channel=Edrick
+	- https://www.youtube.com/watch?v=sVC4DL2secQ
+	- https://github.com/21st-dev/magic-mcp
+	- https://github.com/punkpeye/awesome-mcp-servers?tab=readme-ov-file#code-execution
+	- https://github.com/modelcontextprotocol/servers/blob/main/src/everything/sse.ts
+	- https://github.com/zcaceres/markdownify-mcp
+	- https://github.com/punkpeye/awesome-mcp-clients?tab=readme-ov-file
+	- https://x.com/rafalwilinski/status/1908839921617449251
+	- https://sentry.cool/
+	- https://actions.zapier.com/docs/platform/claude/
+	- https://mcpify.ai/what-is-mcp
+	- https://addyo.substack.com/p/mcp-what-it-is-and-why-it-matters
 - seq2seq
 	- https://www.youtube.com/watch?v=zbdong_h-x4&t=51s&ab_channel=GoogleCloudTech
-	- 
+- CodeAct
