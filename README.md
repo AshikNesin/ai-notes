@@ -15,12 +15,24 @@ TLDR: Build things with AI rather than consume it
 
 ## Sections
 ### Resources
-- [[Roadmap]]
-- [[Books & Courses]]
-- [[People]]
-- [[Thoughts]]
-### Weekly Notes
-- [[2024-W06]]
+- [Roadmap](Resources/Roadmap.md)
+- [Books & Courses](Resources/Books%20&%20Courses.md)
+- [People](Resources/People.md)
+- [Thoughts](Resources/Thoughts.md)
+### Monthly Notes
+- [2025-07](Areas/monthly-notes/2025-07.md)
+- [2025-06](Areas/monthly-notes/2025-06.md)
+- [2025-05](Areas/monthly-notes/2025-05.md)
+- [2025-04](Areas/monthly-notes/2025-04.md)
+- [2025-03](Areas/monthly-notes/2025-03.md)
+- [2025-02](Areas/monthly-notes/2025-02.md)
+- [2025-01](Areas/monthly-notes/2025-01.md)
+- [2024-12](Areas/monthly-notes/2024-12.md)
+- [2024-11](Areas/monthly-notes/2024-11.md)
+- [2024-09](Areas/monthly-notes/2024-09.md)
+- [2024-07](Areas/monthly-notes/2024-07.md)
+- [2024-02](Areas/monthly-notes/2024-02.md)
+- [2023-12](Areas/monthly-notes/2023-12.md)
 ### Daily Notes
 It's more of brain dump with you can see it under `/journals` directory
 
