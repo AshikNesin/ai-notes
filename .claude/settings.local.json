@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:kilocode.ai)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:unmute.sh)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:www.indragie.com)"
+    ],
+    "deny": []
+  }
+}
